@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    width: 30vw;
+    height: 75vh;
+    position: absolute;
+    top: 10vh;
+    left: 35vw;
+    border-radius: 20px;
+    background: green;
+    display: flex;
+    flex-direction: column;
+}
+.input input{
+    width: 100%;
+    height: 15vh;
+    background-color: black;
+    font-size: 40px;
+    border-radius: 20px;
+    font-weight: 700;
+    padding: 20px;
+    /* margin-bottom: 10px; */
+}
+.button{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 12vh 12vh 12vh 12vh 12vh;
+}
+.btnn{
+    border-radius: 20px;
+    background-color: greenyellow;
+}
+button{
+    font-size: 20px;
+}
