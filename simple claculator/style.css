@@ -1,40 +1,99 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
 }
 
-.body{
-    width: 30vw;
-    height: 75vh;
-    position: absolute;
-    top: 10vh;
-    left: 35vw;
-    border-radius: 20px;
-    background: green;
+html,
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, rgba(10, 10, 10, 0.242), rgb(58, 68, 82));
+}
+
+.bdt {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgb(10, 10, 10), rgb(58, 68, 82));
+}
+h1{
+    color: white;
+    
+}
+
+.body {
+    width: fit-content;
+    padding: 24px;
+    height: fit-content;
     display: flex;
     flex-direction: column;
-}
-.input input{
-    width: 100%;
-    height: 15vh;
-    background-color: black;
-    font-size: 40px;
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    border: 1px solid rgb(85, 85, 85);
     border-radius: 20px;
-    font-weight: 700;
-    padding: 20px;
-    color: white;
-    /* margin-bottom: 10px; */
+    background: transparent;
+    box-shadow: 0px 3px 20px 2px rgb(85, 85, 85);
 }
-.button{
+
+.input input {
+    width: 320px;
+    border: none;
+    padding: 24px;
+    margin: 10px;
+    background: transparent;
+    box-shadow: 0px 3px 20px 1px rgb(80, 80, 80);
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+    border-radius: 15px;
+    color: white;
+}
+
+input:hover {
+    box-shadow: 0px 0px 15px rgba(120, 117, 117, 0.166);
+    font-size: 43px;
+    transform: translateY(-2px);
+
+}
+
+button {
+    border: none;
+    margin: 10px;
+    border-radius: 20px;
+    background: transparent;
+    color: #ffffff;
+    font-size: 20px;
+    box-shadow: 8px 8px 15px rgba(185, 179, 179, 0.166);
+    cursor: pointer;
+}
+
+.button {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 5.6vw 5.6vw 5.6vw 5.6vw;
     grid-template-rows: 12vh 12vh 12vh 12vh 12vh;
 }
-.btnn{
-    border-radius: 20px;
-    background-color: greenyellow;
+
+button:hover {
+    box-shadow: 0px 0px 15px rgba(185, 179, 179, 0.166);
+    font-size: 24px;
+    transform: translateY(-2px);
+    /* transition: 3s ease-in-out; */
 }
-button{
-    font-size: 20px;
+
+input::placeholder {
+    color: white;
+}
+
+.eqbtn {
+    background-color: rgb(169, 110, 0);
+    color: white;
+}
+
+.opt {
+    color: greenyellow;
 }
