@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="heroBar">
+        <h1>Interactive Quiz App</h1>
+    </div>
+    <div class="container">
+
+        <div class="qBox">
+            <div class="form">
+                <h2>Are you ready....</h2>
+                <form>
+                    <div class="input-box">
+                        <input class="name" type="text" placeholder="Name" required>
+                    </div>
+                    <button class="btn">Start Quiz</button>
+                </form>
+            </div>
+
+            <div class="quiz" style="display:none;">
+                <h2 id="head"></h2>
+                <div class="ques"></div>
+            </div>
+
+
+        </div>
+        <div id="quiz" class="qBox" style="display:none;">
+            <h2 id="head"></h2>
+
+            <div class="ques"></div>
+
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
